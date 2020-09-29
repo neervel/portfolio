@@ -192,9 +192,11 @@ body {
   }
   .hero-text__intro {
     font-size: 12px;
+    margin-bottom: 15px;
   }
   .hero-text__title {
     font-size: 24px;
+    margin-bottom: 10px;
   }
   .hero-text__subtitle {
     max-width: 200px;
@@ -202,6 +204,7 @@ body {
   }
   .hero-buttons {
     max-width: 130px;
+    margin-bottom: 50px;
   }
   .hero__order {
     margin-right: 0;
