@@ -5,8 +5,87 @@ body, h1, h2, h3, h4, h5, h6, p {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
 }
 
 .container {
   margin: 0 100px;
+}
+
+.button {
+  height: 80px;
+  width: 240px;
+  border: none;
+  font-size: 24px;
+  text-align: center;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.hero {
+  background-color: #000B15;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #000B15), to(#1F3141));
+  background: linear-gradient(90deg, #000B15 60%, #1F3141 100%);
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-main {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.hero-text {
+  margin-top: 160px;
+  margin-bottom: 200px;
+}
+
+.hero-text__intro {
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.hero-text__title {
+  font-size: 48px;
+  color: #FFC700;
+  margin-bottom: 30px;
+}
+
+.hero-text__subtitle {
+  font-size: 36px;
+  max-width: 400px;
+}
+
+.hero-buttons {
+  margin-bottom: 170px;
+}
+
+.hero__order {
+  margin-right: 40px;
+  background-color: #FFC700;
+  color: #000000;
+}
+
+.hero__works {
+  margin-right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #FFC700;
+  color: #ffffff;
 }

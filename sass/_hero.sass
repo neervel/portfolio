@@ -1,1 +1,32 @@
 .hero
+  background-color: $main-bg
+  background: linear-gradient(90deg, #000B15 60%, #1F3141 100%)
+  &-block
+    +flex
+  &-main
+    flex-basis: 50%
+  &-text
+    margin-top: 160px
+    margin-bottom: 200px
+    &__intro
+      font-size: 24px
+      margin-bottom: 22px
+    &__title
+      font-size: 48px
+      color: $main-color
+      margin-bottom: 30px
+    &__subtitle
+      font-size: 36px
+      max-width: 400px
+  &-buttons
+    margin-bottom: 170px
+  &__order
+    margin-right: 40px
+    background-color: $main-color
+    color: #000000
+  &__works
+    margin-right: 0
+    background-color: rgba(0, 0, 0, 0)
+    border: 2px solid $main-color
+    color: #ffffff
+      
