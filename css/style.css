@@ -82,7 +82,7 @@ body {
 }
 
 .footer {
-  background-color: #192835;
+  background-color: #000B15;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,7 +654,7 @@ body {
 }
 
 .contacts {
-  background-color: #000B15;
+  background-color: #02060B;
 }
 
 .contacts-block {
