@@ -812,10 +812,8 @@ body {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  .contacts-form {
-    margin-bottom: 75px;
-  }
   .contacts-text {
+    margin-top: 50px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
