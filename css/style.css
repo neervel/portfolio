@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 body, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -6,7 +27,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .container {
@@ -15,10 +36,11 @@ body {
 
 .button {
   height: 80px;
-  width: 240px;
+  width: 250px;
   border: none;
   font-size: 24px;
   text-align: center;
+  font-family: Montserrat, sans-serif;
 }
 
 .button:focus {
@@ -35,7 +57,7 @@ body {
 
 .pre-title {
   font-size: 32px;
-  line-height: 45px;
+  line-height: 54px;
   position: relative;
 }
 
@@ -51,12 +73,12 @@ body {
 
 .subtitle {
   font-size: 26px;
-  line-height: 35px;
+  line-height: 44px;
 }
 
 .text {
   font-size: 18px;
-  line-height: 26px;
+  line-height: 31px;
 }
 
 @media (max-width: 1200px) {
@@ -191,6 +213,7 @@ body {
   margin-right: 40px;
   background-color: #FFC700;
   color: #000000;
+  font-family: Montserrat-Medium, sans-serif;
 }
 
 .hero__works {
