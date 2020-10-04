@@ -133,6 +133,9 @@ body {
   .footer {
     height: 80px;
   }
+  .footer-text {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -186,6 +189,9 @@ body {
   }
   .footer {
     height: 60px;
+  }
+  .footer-text {
+    font-size: 14px;
   }
 }
 
@@ -450,7 +456,7 @@ body {
 }
 
 .works {
-  background-color: #02060B;
+  background-color: #000B15;
 }
 
 .works-block {
@@ -715,10 +721,12 @@ body {
 }
 
 .contacts-form__name, .contacts-form__mail, .contacts-form__msg {
+  padding: 0;
   font-family: Montserrat, sans-serif;
   font-size: 20px;
   color: #ffffff;
   width: 400px;
+  max-width: 400px;
   margin-bottom: 35px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0);
@@ -772,13 +780,11 @@ body {
 }
 
 .contacts-text__title {
-  display: inline-block;
   margin-bottom: 60px;
   width: 200px;
 }
 
 .contacts-text-email {
-  display: inline-block;
   margin-bottom: 35px;
   width: 200px;
 }
@@ -788,11 +794,76 @@ body {
 }
 
 .contacts-text-phone {
-  display: inline-block;
   margin-bottom: 35px;
   width: 200px;
 }
 
 .contacts-text-phone__title {
   font-family: Montserrat-Bold, sans-serif;
+}
+
+@media (max-width: 960px) {
+  .contacts-block {
+    padding: 40px 0;
+  }
+  .contacts-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .contacts-form {
+    margin-bottom: 75px;
+  }
+  .contacts-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .contacts-text-main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts-text__title {
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+  .contacts-text-phone, .contacts-text-email {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: center;
+  }
+  .contacts-text__email {
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contacts-form {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .contacts-form__name, .contacts-form__mail, .contacts-form__msg {
+    width: 80%;
+    max-width: 300px;
+  }
+  .contacts-form__msg {
+    height: 100px;
+  }
+}
+
+@media (max-width: 460px) {
+  .contacts-text-phone, .contacts-text-email {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }

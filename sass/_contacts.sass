@@ -16,10 +16,12 @@
     flex-flow: column
     flex-basis: 50%
     &__name, &__mail, &__msg
+      padding: 0
       +regular
       font-size: 20px
       color: #ffffff
       width: 400px
+      max-width: 400px
       margin-bottom: 35px
       height: 40px
       background-color: rgba(0,0,0,0)
@@ -46,18 +48,54 @@
       +flex
       flex-flow: column
     &__title
-      display: inline-block
       margin-bottom: 60px
       width: 200px
     &-email
-      display: inline-block
       margin-bottom: 35px
       width: 200px
       &__title
         +bold
     &-phone
-      display: inline-block
       margin-bottom: 35px
       width: 200px
       &__title
         +bold
+  @media ( max-width: 960px )
+    &-block
+      padding: 40px 0
+    &-main
+      flex-flow: column
+    &-form
+      margin-bottom: 75px
+    &-text
+      flex-basis: 100%
+      &-main
+        flex-flow: row
+        flex-wrap: wrap
+        justify-content: center
+      &__title
+        margin-bottom: 30px
+        flex-basis: 100%
+        text-align: center
+      &-phone, &-email
+        flex-basis: 50%
+        text-align: center
+      &__email
+        margin-right: 35px
+  @media ( max-width: 640px )
+    &-form
+      width: 100%
+      flex-basis: 100%
+      &__name, &__mail, &__msg
+        width: 80%
+        max-width: 300px
+      &__msg
+        height: 100px
+  @media ( max-width: 460px )
+    &-text
+      &-phone, &-email
+        flex-basis: 100%
+      
+
+
+    
