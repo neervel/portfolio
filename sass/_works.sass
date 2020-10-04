@@ -1,0 +1,27 @@
+.works
+  background-color: $thrd-bg
+  &-block
+    +flex
+    flex-flow: column
+    justify-content: center
+    padding-top: 75px
+  &-title
+    display: inline-block
+  &-card
+    max-width: 575px
+    max-height: 510px
+    margin-bottom: 90px
+    &:nth-child(odd)
+      margin-right: 50px
+    &__img
+      max-height: 410px
+    &__text
+      margin: 0 auto
+      padding-top: 10px
+      height: 90px
+      max-width: 405px
+      text-align: center
+    &s
+      margin-top: 100px
+      +flex
+      flex-wrap: wrap
