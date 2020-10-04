@@ -30,6 +30,15 @@ body
 .pre-title
   font-size: 32px
   line-height: 45px
+  position: relative
+  &::after
+    position: absolute
+    content: ""
+    height: 2px
+    width: 100%
+    background-color: $main-color
+    left: 0
+    bottom: 0
 .subtitle
   font-size: 26px
   line-height: 35px
