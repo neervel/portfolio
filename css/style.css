@@ -29,6 +29,25 @@ body {
   cursor: pointer;
 }
 
+.title {
+  font-size: 60px;
+}
+
+.pre-title {
+  font-size: 32px;
+  line-height: 45px;
+}
+
+.subtitle {
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 26px;
+}
+
 @media (max-width: 1200px) {
   .container {
     margin: 0 75px;
@@ -43,6 +62,21 @@ body {
 @media (max-width: 860px) {
   .container {
     margin: 0 50px;
+  }
+  .title {
+    font-size: 45px;
+  }
+  .pre-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .subtitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 22px;
   }
   .button {
     height: 60px;
@@ -61,6 +95,21 @@ body {
     width: 150px;
     font-size: 16px;
   }
+  .title {
+    font-size: 30px;
+  }
+  .pre-title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .text {
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -68,6 +117,21 @@ body {
     height: 40px;
     width: 130px;
     font-size: 14px;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .pre-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -95,23 +159,20 @@ body {
 }
 
 .hero-text__intro {
-  font-size: 24px;
   margin-bottom: 22px;
 }
 
 .hero-text__title {
-  font-size: 48px;
   color: #FFC700;
   margin-bottom: 30px;
 }
 
 .hero-text__subtitle {
-  font-size: 36px;
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .hero-buttons {
-  margin-bottom: 170px;
+  margin-bottom: 85px;
 }
 
 .hero__order {
@@ -132,15 +193,8 @@ body {
     margin-top: 120px;
     margin-bottom: 150px;
   }
-  .hero-text__title {
-    font-size: 40px;
-  }
   .hero-text__subtitle {
-    font-size: 32px;
     max-width: 350px;
-  }
-  .hero-buttons {
-    margin-bottom: 150px;
   }
 }
 
@@ -149,14 +203,7 @@ body {
     margin-top: 100px;
     margin-bottom: 120px;
   }
-  .hero-text__intro {
-    font-size: 18px;
-  }
-  .hero-text__title {
-    font-size: 32px;
-  }
   .hero-text__subtitle {
-    font-size: 28px;
     max-width: 300px;
   }
   .hero-buttons {
@@ -172,14 +219,8 @@ body {
     margin-top: 70px;
     margin-bottom: 70px;
   }
-  .hero__intro {
-    font-size: 12px;
-  }
-  .hero__title {
-    font-size: 28px;
-  }
-  .hero__subtitle {
-    font-size: 24px;
+  .hero-text__subtitle {
+    max-width: 280px;
   }
   .hero__order {
     margin-right: 20px;
@@ -191,16 +232,13 @@ body {
     margin: 50px 0;
   }
   .hero-text__intro {
-    font-size: 12px;
     margin-bottom: 15px;
   }
   .hero-text__title {
-    font-size: 24px;
     margin-bottom: 10px;
   }
   .hero-text__subtitle {
-    max-width: 200px;
-    font-size: 18px;
+    max-width: 220px;
   }
   .hero-buttons {
     max-width: 130px;
@@ -210,4 +248,65 @@ body {
     margin-right: 0;
     margin-bottom: 20px;
   }
+}
+
+.skills {
+  background-color: #192835;
+}
+
+.skills-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills-img {
+  margin-top: 115px;
+  height: 500px;
+  width: 350px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.skills-img::before, .skills-img::after {
+  position: absolute;
+  content: "";
+  height: 500px;
+  width: 350px;
+}
+
+.skills-img::before {
+  left: -15px;
+  bottom: 15px;
+  background-color: #FFC700;
+}
+
+.skills-img::after {
+  left: 0;
+  bottom: 0;
+  background-color: #7C7C7C;
+}
+
+.skills-text {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.skills__title {
+  margin-bottom: 50px;
+}
+
+.skills-list {
+  padding-left: 15px;
+  max-width: 550px;
+}
+
+.skills-list__item {
+  margin-bottom: 35px;
 }
