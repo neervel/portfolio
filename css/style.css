@@ -56,7 +56,7 @@ body {
 }
 
 .pre-title {
-  font-size: 32px;
+  font-size: 42px;
   line-height: 54px;
   position: relative;
 }
@@ -68,7 +68,7 @@ body {
   width: 100%;
   background-color: #FFC700;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
 }
 
 .subtitle {
@@ -77,7 +77,7 @@ body {
 }
 
 .text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 31px;
 }
 
@@ -87,7 +87,7 @@ body {
   }
   .button {
     height: 70px;
-    width: 220px;
+    width: 230px;
     font-size: 22px;
   }
 }
@@ -101,19 +101,19 @@ body {
   }
   .pre-title {
     font-size: 28px;
-    line-height: 40px;
+    line-height: 48px;
   }
   .subtitle {
     font-size: 22px;
-    line-height: 30px;
+    line-height: 37px;
   }
   .text {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 27px;
   }
   .button {
     height: 60px;
-    width: 180px;
+    width: 190px;
     font-size: 18px;
   }
 }
@@ -125,7 +125,7 @@ body {
   }
   .button {
     height: 50px;
-    width: 150px;
+    width: 160px;
     font-size: 16px;
     border: 1px solid #FFC700;
   }
@@ -134,22 +134,22 @@ body {
   }
   .pre-title {
     font-size: 24px;
-    line-height: 35px;
+    line-height: 41px;
   }
   .subtitle {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 34px;
   }
   .text {
-    font-size: 15px;
-    line-height: 21px;
+    font-size: 18px;
+    line-height: 31px;
   }
 }
 
 @media (max-width: 460px) {
   .button {
-    height: 40px;
-    width: 130px;
+    height: 50px;
+    width: 150px;
     font-size: 14px;
   }
   .title {
@@ -157,15 +157,15 @@ body {
   }
   .pre-title {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 34px;
   }
   .subtitle {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 31px;
   }
   .text {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 27px;
   }
 }
 
@@ -239,7 +239,7 @@ body {
     margin-bottom: 120px;
   }
   .hero-text__subtitle {
-    max-width: 300px;
+    max-width: 270px;
   }
   .hero-buttons {
     margin-bottom: 80px;
@@ -255,7 +255,7 @@ body {
     margin-bottom: 70px;
   }
   .hero-text__subtitle {
-    max-width: 280px;
+    max-width: 250px;
   }
   .hero__order {
     margin-right: 20px;
@@ -274,7 +274,7 @@ body {
     margin-bottom: 10px;
   }
   .hero-text__subtitle {
-    max-width: 220px;
+    max-width: 230px;
   }
   .hero-buttons {
     max-width: 130px;
@@ -307,8 +307,9 @@ body {
   height: 500px;
   width: 350px;
   margin-left: 15px;
-  margin-right: 100px;
   position: relative;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .skills-img::before, .skills-img::after {
@@ -333,6 +334,8 @@ body {
 .skills-text {
   margin-top: 80px;
   margin-bottom: 50px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .skills__title {
@@ -448,6 +451,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 75px;
+  padding-bottom: 50px;
 }
 
 .works-title {
@@ -455,8 +459,8 @@ body {
 }
 
 .works-card {
-  max-width: 575px;
-  max-height: 510px;
+  width: 575px;
+  height: 510px;
   margin-bottom: 90px;
 }
 
@@ -465,13 +469,13 @@ body {
 }
 
 .works-card__img {
-  max-height: 410px;
+  height: 400px;
 }
 
 .works-card__text {
   margin: 0 auto;
   padding-top: 10px;
-  height: 90px;
+  height: 100px;
   max-width: 405px;
   text-align: center;
 }
@@ -489,4 +493,142 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.works__more {
+  display: inline-block;
+  position: relative;
+}
+
+.works__more::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.works__more:hover {
+  cursor: pointer;
+}
+
+.works__more:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .works-card {
+    width: 475px;
+    height: 400px;
+  }
+  .works-card__img {
+    height: 325px;
+    width: 475px;
+  }
+  .works-card__text {
+    height: 75px;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .works-card {
+    width: 400px;
+    height: 350px;
+  }
+  .works-card__img {
+    height: 275px;
+    width: 400px;
+  }
+  .works-card__text {
+    height: 75px;
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .works-block {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .works-card {
+    width: 575px;
+    height: 510px;
+    margin-bottom: 75px;
+  }
+  .works-card:nth-child(odd) {
+    margin-right: 0;
+  }
+  .works-card__img {
+    height: 400px;
+    width: 575px;
+  }
+  .works-card__text {
+    height: 100px;
+    max-width: 405px;
+  }
+  .works-cards {
+    margin-top: 75px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+@media (max-width: 860px) {
+  .works-card {
+    width: 475px;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+  .works-card__img {
+    height: 325px;
+    width: 475px;
+  }
+  .works-card__text {
+    height: 75px;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  .works-block {
+    padding-bottom: 30px;
+  }
+  .works-card {
+    width: 400px;
+    height: 350px;
+    margin-bottom: 30px;
+  }
+  .works-card__img {
+    height: 275px;
+    width: 400px;
+  }
+  .works-card__text {
+    height: 75px;
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 460px) {
+  .works-card {
+    width: 280px;
+    height: 275px;
+  }
+  .works-card__img {
+    height: 200px;
+    width: 280px;
+  }
+  .works-card__text {
+    height: 75px;
+    max-width: 250px;
+  }
+  .works-cards {
+    margin-bottom: 50px;
+  }
 }
