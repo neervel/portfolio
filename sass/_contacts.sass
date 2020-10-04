@@ -2,3 +2,62 @@
   background-color: $main-bg
   &-block
     padding: 75px 0
+    +flex
+    flex-flow: column
+  &__title
+    margin-bottom: 70px
+  &-main
+    +flex
+    justify-content: center
+    width: 100%
+    flex-wrap: wrap
+  &-form
+    +flex
+    flex-flow: column
+    flex-basis: 50%
+    &__name, &__mail, &__msg
+      +regular
+      font-size: 20px
+      color: #ffffff
+      width: 400px
+      margin-bottom: 35px
+      height: 40px
+      background-color: rgba(0,0,0,0)
+      border: none
+      border-bottom: 2px solid #ffffff
+      transition: 0.2s
+      &:hover
+        cursor: text
+      &:focus, &:active
+        outline: none
+        border-bottom: 2px solid $main-color
+    &__msg
+      height: 160px
+    &__button
+      margin-top: 70px
+      background-color: $main-color
+      +medium     
+  &-text
+    flex-basis: 50%
+    height: 100%
+    width: 100%
+    &-main
+      margin: 0 auto
+      +flex
+      flex-flow: column
+    &__title
+      display: inline-block
+      margin-bottom: 60px
+      width: 200px
+    &-email
+      display: inline-block
+      margin-bottom: 35px
+      width: 200px
+      &__title
+        +bold
+    &-phone
+      display: inline-block
+      margin-bottom: 35px
+      width: 200px
+      &__title
+        +bold

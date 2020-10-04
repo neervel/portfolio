@@ -570,7 +570,7 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
   .works-block {
     padding-top: 50px;
     padding-bottom: 40px;
@@ -659,4 +659,140 @@ body {
 
 .contacts-block {
   padding: 75px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.contacts__title {
+  margin-bottom: 70px;
+}
+
+.contacts-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.contacts-form__name, .contacts-form__mail, .contacts-form__msg {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  width: 400px;
+  margin-bottom: 35px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contacts-form__name:hover, .contacts-form__mail:hover, .contacts-form__msg:hover {
+  cursor: text;
+}
+
+.contacts-form__name:focus, .contacts-form__name:active, .contacts-form__mail:focus, .contacts-form__mail:active, .contacts-form__msg:focus, .contacts-form__msg:active {
+  outline: none;
+  border-bottom: 2px solid #FFC700;
+}
+
+.contacts-form__msg {
+  height: 160px;
+}
+
+.contacts-form__button {
+  margin-top: 70px;
+  background-color: #FFC700;
+  font-family: Montserrat-Medium, sans-serif;
+}
+
+.contacts-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.contacts-text-main {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.contacts-text__title {
+  display: inline-block;
+  margin-bottom: 60px;
+  width: 200px;
+}
+
+.contacts-text-email {
+  display: inline-block;
+  margin-bottom: 35px;
+  width: 200px;
+}
+
+.contacts-text-email__title {
+  font-family: Montserrat-Bold, sans-serif;
+}
+
+.contacts-text-phone {
+  display: inline-block;
+  margin-bottom: 35px;
+  width: 200px;
+}
+
+.contacts-text-phone__title {
+  font-family: Montserrat-Bold, sans-serif;
 }
