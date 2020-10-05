@@ -431,6 +431,9 @@ body {
   .skills__title {
     margin-bottom: 20px;
   }
+  .skills-list {
+    padding-left: 0;
+  }
   .skills-list__item {
     margin-bottom: 15px;
   }
@@ -441,11 +444,19 @@ body {
     display: none;
   }
   .skills-text {
+    margin: 0 auto;
     max-width: 350px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-top: 25px;
     margin-bottom: 25px;
+    text-align: center;
+  }
+  .skills-list {
+    list-style: none;
+  }
+  .skills-list__item {
+    margin-bottom: 45px;
   }
 }
 
@@ -845,6 +856,9 @@ body {
 }
 
 @media (max-width: 640px) {
+  .contacts-block {
+    padding-bottom: 25px;
+  }
   .contacts-form {
     width: 100%;
     -ms-flex-preferred-size: 100%;
@@ -856,6 +870,9 @@ body {
   }
   .contacts-form__msg {
     height: 100px;
+  }
+  .contacts-form__button {
+    margin-top: 30px;
   }
 }
 
