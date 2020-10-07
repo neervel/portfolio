@@ -314,8 +314,17 @@ a {
     max-width: 250px;
   }
   .hero__order {
-    margin-right: 20px;
+    margin-right: 0;
+  }
+  .hero__order:hover {
+    background-color: rgba(0, 0, 0, 0);
     border: 1px solid #FFC700;
+    color: #ffffff;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .hero__works {
+    display: none;
   }
 }
 
@@ -335,10 +344,6 @@ a {
   .hero-buttons {
     max-width: 130px;
     margin-bottom: 50px;
-  }
-  .hero__order {
-    margin-right: 0;
-    margin-bottom: 20px;
   }
 }
 

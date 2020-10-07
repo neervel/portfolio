@@ -62,8 +62,15 @@
       &__subtitle
         max-width: 250px
     &__order
-      margin-right: 20px
-      border: 1px solid $main-color
+      margin-right: 0
+      &:hover
+        background-color: rgba(0, 0, 0, 0)
+        border: 1px solid $main-color
+        color: #ffffff
+        transform: none
+    &__works
+      display: none
+
   @media (max-width: 460px)
     &-text
       margin: 50px 0
@@ -76,6 +83,3 @@
     &-buttons
       max-width: 130px
       margin-bottom: 50px
-    &__order
-      margin-right: 0
-      margin-bottom: 20px
