@@ -9,23 +9,32 @@
   &-title
     display: inline-block
   &-card
-    width: 575px
+    width: 570px
     height: 510px
     margin-bottom: 90px
+    transition: 0.2s
     &:nth-child(odd)
       margin-right: 50px
     &__img
       height: 400px
+      width: 570px
     &__text
       margin: 0 auto
       padding-top: 10px
       height: 100px
       max-width: 405px
       text-align: center
+    &:hover
+      transform: scale(1.05)
+      cursor: pointer
     &s
       margin-top: 100px
       +flex
       flex-wrap: wrap
+  &-hide
+    +flex
+    width: 100%
+    flex-wrap: wrap
   &__more
     display: inline-block
     position: relative
@@ -83,6 +92,8 @@
       &s
         margin-top: 75px
         flex-flow: column
+    &-hide
+      flex-flow: column
   @media ( max-width: 860px )
     &-card
       width: 475px

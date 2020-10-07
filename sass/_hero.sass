@@ -20,11 +20,21 @@
     background-color: $main-color
     color: #000000
     +medium
+    transition: 0.3s
+    &:hover
+      background-color: rgba(0, 0, 0, 0)
+      border: 2px solid $main-color
+      color: #ffffff
   &__works
     margin-right: 0
     background-color: rgba(0, 0, 0, 0)
     border: 2px solid $main-color
     color: #ffffff
+    transition: 0.3s
+    &:hover
+      background-color: $main-color
+      color: #000000
+      +medium
 
   @media ( max-width: 1200px )
     &-text

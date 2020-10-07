@@ -37,8 +37,14 @@
       height: 160px
     &__button
       margin-top: 70px
-      background-color: $main-color
-      +medium     
+      background-color: rgba(0, 0, 0, 0)
+      border: 2px solid $main-color
+      color: #ffffff
+      transition: 0.3s
+      &:hover
+        background-color: $main-color
+        color: #000000
+        +medium
   &-text
     flex-basis: 50%
     height: 100%

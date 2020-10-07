@@ -61,18 +61,19 @@
             <p class="works-card__text subtitle">Создание сайта компании по продаже квартир</p>
           </div>
           <!-- /.card-2 -->
-          <div class="works-card">
+          <div id="hiddenCard" class="works-card">
             <img src="img/card-3.jpg" alt="card-3" class="works-card__img">
             <p class="works-card__text subtitle">Верстка сайта на тематику вина</p>
           </div>
           <!-- /.card-3 -->
-          <div class="works-card">
+          <div id="hiddenCard" class="works-card">
             <img src="img/card-4.jpg" alt="card-4" class="works-card__img">
             <p class="works-card__text subtitle">Редизайн сайта компании SpaceX</p>
           </div>
+          
           <!-- /.card-4 -->
         </div>
-        <p class="works__more text">Посмотреть еще</p>
+        <p id="showMore" class="works__more text">Посмотреть еще</p>
       </div>
     </div>
   </div>
@@ -93,11 +94,11 @@
               <p class="contacts-text__title subtitle">Контакты</p>
               <div class="contacts-text-email">
                 <p class="contacts-text-email__title text">E-mail:</p>
-                <p class="contacts-text-email__text text">klihopoy@mail.ru</p>
+                <a href="mailto:klihopoy@mail.ru" class="contacts-text-email__text text">klihopoy@mail.ru</a>
               </div>
               <div class="contacts-text-phone">
                 <p class="contacts-text-phone__title text">Телефон:</p>
-                <p class="contacts-text-phone__text text">8 (999) 123-45-67</p>
+                <a href="tel:89991234567" class="contacts-text-phone__text text">8 (999) 123-45-67</a>
               </div>
             </div>
           </div>
@@ -112,5 +113,10 @@
     </div>
   </div>
   <!-- /.footer -->
+  <script src="js/script.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>

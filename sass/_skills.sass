@@ -8,7 +8,6 @@
     width: 350px
     margin-left: 15px
     position: relative
-    flex-basis: 50%
     &::before, &::after
       position: absolute
       content: ""
@@ -18,10 +17,16 @@
       left: -15px
       bottom: 15px
       background-color: $main-color
+      transition: 0.2s
     &::after
       left: 0
       bottom: 0
       background-color: #7C7C7C
+    &:hover
+        &::before
+          left: -20px
+          bottom: 20px
+      
   &-text
     margin-top: 80px
     margin-bottom: 50px
