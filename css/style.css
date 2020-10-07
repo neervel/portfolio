@@ -257,6 +257,8 @@ a {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #FFC700;
   color: #ffffff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .hero__works {
@@ -264,14 +266,17 @@ a {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #FFC700;
   color: #ffffff;
+  font-family: Montserrat-Medium, sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .hero__works:hover {
+  border: none;
   background-color: #FFC700;
   color: #000000;
-  font-family: Montserrat-Medium, sans-serif;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 1200px) {

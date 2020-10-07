@@ -25,16 +25,19 @@
       background-color: rgba(0, 0, 0, 0)
       border: 2px solid $main-color
       color: #ffffff
+      transform: scale(1.05)
   &__works
     margin-right: 0
     background-color: rgba(0, 0, 0, 0)
     border: 2px solid $main-color
     color: #ffffff
+    +medium
     transition: 0.3s
     &:hover
+      border: none
       background-color: $main-color
       color: #000000
-      +medium
+      transform: scale(1.05)
 
   @media ( max-width: 1200px )
     &-text
