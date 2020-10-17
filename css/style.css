@@ -248,6 +248,7 @@ a {
   margin-right: 40px;
   background-color: #FFC700;
   color: #000000;
+  border: 2px solid #FFC700;
   font-family: Montserrat-Medium, sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -255,28 +256,39 @@ a {
 
 .hero__order:hover {
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #FFC700;
   color: #ffffff;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .hero__works {
+  font-size: 24px;
   margin-right: 0;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #FFC700;
   color: #ffffff;
   font-family: Montserrat-Medium, sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: inline-block;
+  position: relative;
+}
+
+.hero__works::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #ffffff;
+  left: 0;
+  bottom: -5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .hero__works:hover {
-  border: none;
-  background-color: #FFC700;
-  color: #000000;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.hero__works:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -286,6 +298,9 @@ a {
   }
   .hero-text__subtitle {
     max-width: 350px;
+  }
+  .hero__works {
+    font-size: 22px;
   }
 }
 
@@ -302,6 +317,9 @@ a {
   }
   .hero__order {
     margin-right: 25px;
+  }
+  .hero__works {
+    font-size: 18px;
   }
 }
 
@@ -842,7 +860,6 @@ a {
 .contacts-form__button:hover {
   background-color: #FFC700;
   color: #000000;
-  font-family: Montserrat-Medium, sans-serif;
 }
 
 .contacts-text {

@@ -19,25 +19,34 @@
     margin-right: 40px
     background-color: $main-color
     color: #000000
+    border: 2px solid $main-color
     +medium
     transition: 0.3s
     &:hover
       background-color: rgba(0, 0, 0, 0)
-      border: 2px solid $main-color
       color: #ffffff
-      transform: scale(1.05)
   &__works
+    font-size: 24px
     margin-right: 0
     background-color: rgba(0, 0, 0, 0)
-    border: 2px solid $main-color
     color: #ffffff
     +medium
     transition: 0.3s
+    display: inline-block
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      height: 1px
+      width: 0%
+      background-color: #ffffff
+      left: 0
+      bottom: -5px
+      transition: 0.2s
     &:hover
-      border: none
-      background-color: $main-color
-      color: #000000
-      transform: scale(1.05)
+      cursor: pointer
+      &::after
+        width: 100%
 
   @media ( max-width: 1200px )
     &-text
@@ -45,6 +54,8 @@
       margin-bottom: 150px
       &__subtitle
         max-width: 350px
+    &__works
+      font-size: 22px
   @media ( max-width: 860px )
     &-text
       margin-top: 100px
@@ -55,6 +66,8 @@
       margin-bottom: 80px
     &__order
       margin-right: 25px
+    &__works
+      font-size: 18px
   @media ( max-width: 640px )
     &-text
       margin-top: 70px

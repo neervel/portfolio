@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width='device-width', initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <title>Фронтентд-разработчик | Neervel</title>
 </head>
 <body>
   <div class="hero">
     <div class="container">
       <div class="hero-block">
-        <div class="hero-main wow fadeInUp">
-          <div class="hero-text">
+        <div class="hero-main">
+          <div class="hero-text ">
             <p class="hero-text__intro text">Здравствуйте</p>
             <h1 class="hero-text__title title">Меня зовут Кирилл</h1>
             <p class="hero-text__subtitle subtitle">Я - фрилансер, фронтенд-разработчик</p>
           </div>
           <div class="hero-buttons">
-            <button class="hero__order button">Заказать сайт</button>
-            <button class="hero__works button">Cмотреть работы</button>
+            <button id="order" class="hero__order button">Заказать сайт</button>
+            <p id="works" class="hero__works">Cмотреть работы</p>
           </div>
         </div>
       </div>
@@ -49,7 +48,7 @@
   <!-- /.skills -->
   <div class="works">
     <div class="container">
-      <div class="works-block">
+      <div id="worksBlock" class="works-block">
         <p class="works__title pre-title">Мои работы</p>
         <div class="works-cards">
           <div class="works-card">
@@ -81,11 +80,11 @@
   <!-- /.works -->
   <div class="contacts">
     <div class="container">
-      <div class="contacts-block">
+      <div id="contactsBlock" class="contacts-block">
         <p class="contacts__title pre-title">Обратная связь</p>
         <div class="contacts-main">
           <form action="" class="contacts-form">
-            <input type="text" placeholder="Как вас зовут?" class="contacts-form__name">
+            <input id="nameInput" type="text" placeholder="Как вас зовут?" class="contacts-form__name">
             <input type="text" placeholder="Ваш E-mail" class="contacts-form__mail">
             <input type="text" placeholder="Сообщение" class="contacts-form__msg">
             <button class="contacts-form__button button">Отправить</button>
@@ -114,10 +113,16 @@
     </div>
   </div>
   <!-- /.footer -->
+  <script src="js/jquery.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/wow.min.js"></script>
   <script>
-    new WOW().init();
+    $('#works').click(function(){
+      $('html, body').animate({scrollTop: $("#worksBlock").offset().top}, 500);
+    });
+    $('#order').click(function(){
+      $('html, body').animate({scrollTop: $("#contactsBlock").offset().top}, 500);
+      $("#nameInput").focus();
+    });
   </script>
 </body>
 </html>
