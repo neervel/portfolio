@@ -114,20 +114,16 @@
     </div>
   </div>
   <!-- /.footer -->
-  <script type="javascript" src="js/jquery.min.js">
-  </script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/jquery.jscrollpane.min.js"></script>
   <script>
-    $(document).ready(function () {
-      // $('.scrollpane').jScrollPane({showArrows: true});
-    });
     $('#works').click(function(){
       $('html, body').animate({scrollTop: $("#worksBlock").offset().top}, 500);
+      $("#worksBlock").addClass("androidFix").scrollTop(0).removeClass("androidFix");
     });
     $('#order').click(function(){
       $('html, body').animate({scrollTop: $("#contactsBlock").offset().top}, 500);
+      $("#contactsBlock").addClass("androidFix").scrollTop(0).removeClass("androidFix");      
       $("#nameInput").focus();
     });
   </script>

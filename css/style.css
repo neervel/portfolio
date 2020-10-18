@@ -30,6 +30,12 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+.androidFix {
+  overflow: hidden !important;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
 .container {
   margin: 0 100px;
 }
