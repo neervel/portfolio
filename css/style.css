@@ -30,10 +30,35 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-.androidFix {
-  overflow: hidden !important;
-  overflow-y: hidden !important;
-  overflow-x: hidden !important;
+input.error, textarea.error {
+  margin-bottom: 10px;
+  border-bottom: 2px solid red;
+}
+
+#nameInput-error, #email-error, #message-error {
+  height: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  #nameInput-error, #email-error, #message-error {
+    max-width: 300px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  #nameInput-error, #email-error, #message-error {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 460px) {
+  #nameInput-error, #email-error, #message-error {
+    font-size: 14px;
+  }
 }
 
 .container {
@@ -832,20 +857,20 @@ a {
   color: #ffffff;
   width: 400px;
   max-width: 400px;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   border-bottom: 2px solid #ffffff;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
 }
 
 .contacts-form__name:hover, .contacts-form__mail:hover, .contacts-form__msg:hover {
   cursor: text;
 }
 
-.contacts-form__name:focus, .contacts-form__name:active, .contacts-form__mail:focus, .contacts-form__mail:active, .contacts-form__msg:focus, .contacts-form__msg:active {
+.contacts-form__name:focus, .contacts-form__mail:focus, .contacts-form__msg:focus {
   outline: none;
   border-bottom: 2px solid #FFC700;
 }
@@ -868,6 +893,11 @@ a {
 .contacts-form__button:hover {
   background-color: #FFC700;
   color: #000000;
+}
+
+.contacts-form__button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .contacts-text {

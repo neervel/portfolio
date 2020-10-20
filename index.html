@@ -84,7 +84,7 @@
       <div id="contactsBlock" class="contacts-block">
         <p class="contacts__title pre-title">Обратная связь</p>
         <div class="contacts-main">
-          <form action="php/mail.php" method="POST" class="contacts-form">
+          <form action="php/mail.php" method="POST" id="form" class="contacts-form">
             <input name="name" id="nameInput" type="text" placeholder="Как вас зовут?" class="contacts-form__name">
             <input name="email" type="text" placeholder="Ваш E-mail" class="contacts-form__mail">
             <textarea name="message" id="message" rows="10" cols="45" class="contacts-form__msg scrollpane" placeholder="Ваше сообщение"></textarea>
@@ -116,7 +116,34 @@
   <!-- /.footer -->
   <script src="js/jquery.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script>
+    $('#form').validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        message: {
+          required: true
+        }
+      },
+      messages: {
+        name: {
+          required: "Укажите ваше имя",
+          minlength: "Имя должно быть не короче 2-х символов"
+        },
+        email: {
+          required: "Укажите ваш e-mail",
+          email: "Укажите корректный e-mail"
+        },
+        message: "Введите ваше сообщение"
+      }
+    });
     $('#works').click(function(){
       $('html, body').animate({scrollTop: $("#worksBlock").offset().top}, 500);
       $("#worksBlock").addClass("androidFix").scrollTop(0).removeClass("androidFix");
