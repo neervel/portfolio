@@ -801,7 +801,6 @@ a {
   .works-card {
     width: 475px;
     height: 400px;
-    margin-bottom: 50px;
   }
   .works-card__img {
     height: 325px;
@@ -823,7 +822,7 @@ a {
   .works-card {
     width: 400px;
     height: 350px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .works-card__img {
     height: 275px;
