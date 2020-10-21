@@ -8,11 +8,16 @@
     padding-bottom: 50px
   &-title
     display: inline-block
+  &-hidden
+    width: 100%
+    +flex
+    display: none
+    flex-wrap: wrap
   &-card
     width: 570px
     height: 510px
     margin-bottom: 90px
-    transition: 0.2s
+    transition: transform 0.2s linear
     position: relative
     &:nth-child(odd)
       margin-right: 50px
@@ -36,16 +41,13 @@
         margin-bottom: 50px
     &-content
       padding: 50px 30px
-    
-
-
-
     &:hover
       transform: scale(1.05)
     &s
       margin-top: 100px
       +flex
       flex-wrap: wrap
+      width: 100%
   &-hide
     +flex
     width: 100%
@@ -78,6 +80,8 @@
       &__text
         height: 75px
         max-width: 450px
+      &-info
+        height: 325px
   @media ( max-width: 1200px )
     &-card
       width: 400px
@@ -88,7 +92,11 @@
       &__text
         height: 75px
         max-width: 375px
+      &-info
+        height: 275px
   @media ( max-width: 1020px )
+    &-hidden
+      flex-flow: column
     &-block
       padding-top: 50px 
       padding-bottom: 40px
@@ -104,6 +112,8 @@
       &__text
         height: 100px
         max-width: 405px
+      &-info
+        height: 400px
       &s
         margin-top: 75px
         flex-flow: column
@@ -120,6 +130,8 @@
       &__text
         height: 75px
         max-width: 450px
+      &-info
+        height: 325px
   @media ( max-width: 640px )
     &-block
       padding-bottom: 30px
@@ -133,6 +145,8 @@
       &__text
         height: 75px
         max-width: 375px
+      &-info
+        height: 275px
   @media ( max-width: 460px )
     &-card
       width: 280px
@@ -143,5 +157,7 @@
       &__text
         height: 75px
         max-width: 250px
+      &-info
+        height: 200px
       &s
         margin-bottom: 50px

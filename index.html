@@ -55,7 +55,7 @@
           <div id="card" class="works-card">
             <div id="cardInfo" class="works-card-info hidden">
               <div class="works-card-content">
-                <p class="works-card-info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure.</p>
+                <p class="works-card-info__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure.</p>
                 <a href="https://neervel.github.io/delivery_food/" class="works-card-info__link" target="blank">Ссылка</a>
               </div>
             </div>
@@ -66,7 +66,7 @@
           <div class="works-card">
             <div id="cardInfo" class="works-card-info hidden">
               <div class="works-card-content">
-                <p class="works-card-info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure.</p>
+                <p class="works-card-info__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure.</p>
                 <a href="https://neervel.github.io/web-work/" class="works-card-info__link" target="blank">Ссылка</a>
               </div>
             </div>
@@ -74,10 +74,13 @@
             <p class="works-card__text subtitle">Создание сайта компании по продаже квартир</p>
           </div>
           <!-- /.card-2 -->
+        </div>
+        
+        <div id="hiddenCards" class="works-hidden">
           <div id="card" class="works-card">
             <div id="cardInfo" class="works-card-info hidden">
               <div class="works-card-content">
-                <p class="works-card-info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure.</p>
+                <p class="works-card-info__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure.</p>
                 <a href="https://neervel.github.io/wine_universe/" class="works-card-info__link" target="blank">Ссылка</a>
               </div>
             </div>
@@ -88,17 +91,16 @@
           <div id="card" class="works-card">
             <div id="cardInfo" class="works-card-info hidden">
               <div class="works-card-content">
-                <p class="works-card-info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure.</p>
+                <p class="works-card-info__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure.</p>
                 <a href="https://neervel.github.io/spacexyz/" class="works-card-info__link" target="blank">Ссылка</a>
               </div>
             </div>
             <img src="img/card-4.jpg" alt="card-4" class="works-card__img">
             <p class="works-card__text subtitle">Редизайн сайта компании SpaceX</p>
           </div>
-          
           <!-- /.card-4 -->
         </div>
-        <p id="showMore" class="works__more text">Посмотреть еще</p>
+        <p id="showMore" class="works__more text">Посмотреть ещё</p>
       </div>
     </div>
   </div>
@@ -139,48 +141,7 @@
   </div>
   <!-- /.footer -->
   <script src="js/jquery.min.js"></script>
-  <script src="js/script.js"></script>
   <script src="js/jquery.validate.min.js"></script>
-  <script>
-    $('#form').validate({
-      rules: {
-        name: {
-          required: true,
-          minlength: 2
-        },
-        email: {
-          required: true,
-          email: true
-        },
-        message: {
-          required: true
-        }
-      },
-      messages: {
-        name: {
-          required: "Укажите ваше имя",
-          minlength: "Имя должно быть не короче 2-х символов"
-        },
-        email: {
-          required: "Укажите ваш e-mail",
-          email: "Укажите корректный e-mail"
-        },
-        message: "Введите ваше сообщение"
-      }
-    });
-    $('#works').click(function(){
-      $('html, body').animate({scrollTop: $("#worksBlock").offset().top}, 500);
-      $("#worksBlock").addClass("androidFix").scrollTop(0).removeClass("androidFix");
-    });
-    $('#order').click(function(){
-      $('html, body').animate({scrollTop: $("#contactsBlock").offset().top}, 500);
-      $("#contactsBlock").addClass("androidFix").scrollTop(0).removeClass("androidFix");      
-      $("#nameInput").focus();
-    });
-    $(".works-card").hover(function(){
-      $(this).children(".works-card-info").toggleClass("hidden");
-      $(this).children(".works-card-info").toggleClass("visible");
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
