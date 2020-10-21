@@ -853,6 +853,9 @@ a {
   .works-card-info {
     height: 200px;
   }
+  .works-card-content {
+    padding: 20px 20px;
+  }
   .works-cards {
     margin-bottom: 50px;
   }
