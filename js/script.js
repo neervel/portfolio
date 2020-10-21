@@ -6,10 +6,10 @@ $("#showMore").click(function(){
     $(this).text("Показать меньше");
     hidden = false;
   }else{
-    $('html, body').animate({scrollTop: $(".works").offset().top}, 400);
-    $("#hiddenCards").fadeOut("normal");
+    $("#hiddenCards").slideUp("normal");
     $(this).text("Посмотреть ещё");
     hidden = true;
+    $('html, body').animate({scrollTop: $(".works-cards").offset().top}, 400);
   }
 });
 
