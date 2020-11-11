@@ -3,7 +3,7 @@ $("#showMore").click(function(){
   if(hidden==true){
     $("#hiddenCards").slideDown("normal");
     $("#hiddenCards").css("display", "flex");
-    $(this).text("Показать меньше");
+    $(this).text("Спрятать");
     hidden = false;
   }else{
     $("#hiddenCards").slideUp("normal");
