@@ -28,6 +28,7 @@ body {
           box-sizing: border-box;
   color: #ffffff;
   font-family: Montserrat, sans-serif;
+  cursor: default;
 }
 
 input.error, textarea.error {
@@ -261,6 +262,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: url(../img/me.png);
+  background-size: contain;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
 }
 
 .hero-text {
@@ -286,18 +293,21 @@ a {
 }
 
 .hero__order {
-  margin-right: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  font-family: Montserrat-Medium, sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #FFC700;
+}
+
+.hero__order:hover {
   background-color: #FFC700;
   color: #000000;
   border: 2px solid #FFC700;
   font-family: Montserrat-Medium, sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.hero__order:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: #ffffff;
 }
 
 .hero__works {
@@ -332,6 +342,12 @@ a {
   width: 100%;
 }
 
+@media (max-width: 1240px) {
+  .hero-block {
+    background-size: 460px;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero-text {
     margin-top: 120px;
@@ -345,7 +361,16 @@ a {
   }
 }
 
+@media (max-width: 1080px) {
+  .hero-block {
+    background-size: 400px;
+  }
+}
+
 @media (max-width: 860px) {
+  .hero-block {
+    background-size: 300px;
+  }
   .hero-text {
     margin-top: 100px;
     margin-bottom: 120px;
@@ -365,6 +390,9 @@ a {
 }
 
 @media (max-width: 640px) {
+  .hero-block {
+    background: none;
+  }
   .hero-text {
     margin-top: 70px;
     margin-bottom: 70px;
@@ -448,7 +476,9 @@ a {
 .skills-img::after {
   left: 0;
   bottom: 0;
-  background-color: #7C7C7C;
+  background: url("../img/about.jpg");
+  background-size: cover;
+  background-position-x: -50px;
 }
 
 .skills-img:hover::before {
@@ -619,6 +649,10 @@ a {
   transition: transform 0.2s linear;
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
   position: relative;
+}
+
+.works-card:hover {
+  cursor: pointer;
 }
 
 .works-card:nth-child(odd) {
@@ -1001,21 +1035,21 @@ a {
   width: 200px;
 }
 
-.contacts-text-email {
+.contacts-text-email, .contacts-text-phone {
   margin-bottom: 35px;
   width: 200px;
 }
 
-.contacts-text-email__title {
-  font-family: Montserrat-Bold, sans-serif;
+.contacts-text-email__text, .contacts-text-phone__text {
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
-.contacts-text-phone {
-  margin-bottom: 35px;
-  width: 200px;
+.contacts-text-email__text:hover, .contacts-text-phone__text:hover {
+  color: #FFC700;
 }
 
-.contacts-text-phone__title {
+.contacts-text-email__title, .contacts-text-phone__title {
   font-family: Montserrat-Bold, sans-serif;
 }
 

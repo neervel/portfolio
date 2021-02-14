@@ -59,14 +59,13 @@
     &__title
       margin-bottom: 60px
       width: 200px
-    &-email
+    &-email, &-phone
       margin-bottom: 35px
       width: 200px
-      &__title
-        +bold
-    &-phone
-      margin-bottom: 35px
-      width: 200px
+      &__text
+        transition: .2s 
+        &:hover
+          color: $main-color
       &__title
         +bold
   @media ( max-width: 960px )
