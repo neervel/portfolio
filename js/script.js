@@ -50,9 +50,10 @@ $('#form').validate({
     message: "Введите ваше сообщение"
   }
 });
-$('#works').click(function(){
-  $('html, body').animate({scrollTop: $("#worksBlock").offset().top}, 500);
-  $("#worksBlock").addClass("androidFix").scrollTop(0).removeClass("androidFix");
+$('#order').click(function(){
+  $('html, body').animate({scrollTop: $("#contactsBlock").offset().top}, 500);	  
+  $("#contactsBlock").addClass("androidFix").scrollTop(0).removeClass("androidFix"); 
+  $("#nameInput").focus();
 });
 $(".works-card").hover(function(){
   $(this).children(".works-card-info").toggleClass("hidden");
