@@ -1,16 +1,3 @@
-// let hidden = true
-// $("#showMore").click(function(){
-//   if(hidden==true){
-//     $("#hiddenCards").slideDown("normal");
-//     $(this).text("Спрятать");
-//     hidden = false;
-//   }else{
-//     $("#hiddenCards").slideUp("normal");
-//     hidden = true;
-//     $('html, body').animate({scrollTop: $(".works-cards").offset().top}, 400);
-//   }
-// });
-
 const moreBtn = $("#showMore"),
       hiddenCards = $("#hiddenCards")
 moreBtn.on('click', function() {
