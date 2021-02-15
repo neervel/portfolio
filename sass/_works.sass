@@ -87,17 +87,18 @@
       &-info
         height: 275px
   @media ( max-width: 1020px )
-    &-hidden
-      flex-flow: column
     &-block
       padding-top: 50px 
       padding-bottom: 40px
+    &-hidden
+      &-block
+        +flex
+        justify-content: center
     &-card
       width: 575px
       height: 510px
-      margin-bottom: 75px
-      &:nth-child(odd)
-        margin-right: 0
+      margin-bottom: 50px
+      margin-right: 0
       &__img
         height: 400px
         width: 575px
@@ -109,8 +110,6 @@
       &s
         margin-top: 75px
         flex-flow: column
-    &-hide
-      flex-flow: column
   @media ( max-width: 860px )
     &-card
       width: 475px

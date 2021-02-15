@@ -18,9 +18,11 @@ moreBtn.on('click', function() {
       $(this).removeClass('is-active');
       hiddenCards.slideUp(300);
       $('html, body').animate({scrollTop: $(".works-cards").offset().top}, 400);
+      $(this).text("Показать еще");
   } else {
       $(this).addClass('is-active');
       hiddenCards.slideDown(400);
+      $(this).text("Спрятать");
   }
 });
 
