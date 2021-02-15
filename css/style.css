@@ -727,27 +727,10 @@ a {
 
 .works__more {
   display: inline-block;
-  position: relative;
-}
-
-.works__more::after {
-  position: absolute;
-  content: "";
-  height: 1px;
-  width: 0%;
-  background-color: #ffffff;
-  left: 0;
-  bottom: 0;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .works__more:hover {
   cursor: pointer;
-}
-
-.works__more:hover::after {
-  width: 100%;
 }
 
 @media (max-width: 1400px) {

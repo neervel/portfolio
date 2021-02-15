@@ -56,20 +56,8 @@
     flex-wrap: wrap
   &__more
     display: inline-block
-    position: relative
-    &::after
-      position: absolute
-      content: ""
-      height: 1px
-      width: 0%
-      background-color: #ffffff
-      left: 0
-      bottom: 0
-      transition: 0.2s
     &:hover
       cursor: pointer
-      &::after
-        width: 100%
       
 
   @media ( max-width: 1400px )
