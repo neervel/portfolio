@@ -626,6 +626,10 @@ a {
 
 .works-hidden {
   width: 100%;
+  display: none;
+}
+
+.works-hidden-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,7 +639,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -643,7 +646,7 @@ a {
 .works-card {
   width: 570px;
   height: 510px;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   -webkit-transition: -webkit-transform 0.2s linear;
   transition: -webkit-transform 0.2s linear;
   transition: transform 0.2s linear;

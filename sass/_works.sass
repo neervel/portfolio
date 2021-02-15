@@ -10,13 +10,14 @@
     display: inline-block
   &-hidden
     width: 100%
-    +flex
     display: none
-    flex-wrap: wrap
+    &-block
+      +flex
+      flex-wrap: wrap
   &-card
     width: 570px
     height: 510px
-    margin-bottom: 90px
+    margin-bottom: 50px
     transition: transform 0.2s linear
     position: relative
     &:hover
