@@ -68,28 +68,29 @@
   @media ( max-width: 1400px )
     &-card
       width: 475px
-      height: 400px
+      height: 310px
       &__img
-        height: 325px
         width: 475px
+        height: 235px
       &__text
         height: 75px
         max-width: 450px
       &-info
-        height: 325px
+        height: 235px
 
   @media ( max-width: 1200px )
     &-card
       width: 400px
-      height: 350px
+      height: 273px
       &__img
-        height: 275px
+        height: 198px
         width: 400px
       &__text
         height: 75px
         max-width: 375px
       &-info
-        height: 275px
+        height: 198px
+        width: 400px
   @media ( max-width: 1020px )
     &-block
       padding-top: 50px 
@@ -99,60 +100,58 @@
         +flex
         justify-content: center
     &-card
-      width: 575px
-      height: 510px
       margin-bottom: 50px
       margin-right: 0
+      width: 475px
+      height: 310px
       &__img
-        height: 400px
-        width: 575px
-      &__text
-        height: 100px
-        max-width: 405px
+        width: 475px
+        height: 235px
+      &:nth-child(odd)
+        margin-right: 0
       &-info
-        height: 400px
+        width: 475px
+        height: 235px
+        
       &s
         margin-top: 75px
         flex-flow: column
   @media ( max-width: 860px )
+    &__title
+      margin-bottom: 30px
     &-card
-      width: 475px
-      height: 400px
-      &__img
-        height: 325px
-        width: 475px
       &__text
         height: 75px
         max-width: 450px
-      &-info
-        height: 325px
   @media ( max-width: 640px )
     &-block
       padding-bottom: 30px
     &-card
       width: 400px
-      height: 350px
-      margin-bottom: 50px
+      height: 273px
+      margin-bottom: 30px
       &__img
-        height: 275px
         width: 400px
+        height: 198px
       &__text
         height: 75px
         max-width: 375px
       &-info
-        height: 275px
+        width: 400px
+        height: 198px
   @media ( max-width: 460px )
     &-card
       width: 280px
-      height: 275px
+      height: 213px
       &__img
-        height: 200px
         width: 280px
+        height: 138px
       &__text
         height: 75px
         max-width: 250px
       &-info
-        height: 200px
+        width: 280px
+        height: 138px
       &-content
         padding: 20px 20px
       &s

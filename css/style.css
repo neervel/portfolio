@@ -675,28 +675,28 @@ a {
 @media (max-width: 1400px) {
   .works-card {
     width: 475px;
-    height: 400px;
+    height: 310px;
   }
   .works-card__img {
-    height: 325px;
     width: 475px;
+    height: 235px;
   }
   .works-card__text {
     height: 75px;
     max-width: 450px;
   }
   .works-card-info {
-    height: 325px;
+    height: 235px;
   }
 }
 
 @media (max-width: 1200px) {
   .works-card {
     width: 400px;
-    height: 350px;
+    height: 273px;
   }
   .works-card__img {
-    height: 275px;
+    height: 198px;
     width: 400px;
   }
   .works-card__text {
@@ -704,7 +704,8 @@ a {
     max-width: 375px;
   }
   .works-card-info {
-    height: 275px;
+    height: 198px;
+    width: 400px;
   }
 }
 
@@ -720,21 +721,21 @@ a {
     justify-content: center;
   }
   .works-card {
-    width: 575px;
-    height: 510px;
     margin-bottom: 50px;
     margin-right: 0;
+    width: 475px;
+    height: 310px;
   }
   .works-card__img {
-    height: 400px;
-    width: 575px;
+    width: 475px;
+    height: 235px;
   }
-  .works-card__text {
-    height: 100px;
-    max-width: 405px;
+  .works-card:nth-child(odd) {
+    margin-right: 0;
   }
   .works-card-info {
-    height: 400px;
+    width: 475px;
+    height: 235px;
   }
   .works-cards {
     margin-top: 75px;
@@ -743,20 +744,12 @@ a {
 }
 
 @media (max-width: 860px) {
-  .works-card {
-    width: 475px;
-    height: 400px;
-  }
-  .works-card__img {
-    height: 325px;
-    width: 475px;
+  .works__title {
+    margin-bottom: 30px;
   }
   .works-card__text {
     height: 75px;
     max-width: 450px;
-  }
-  .works-card-info {
-    height: 325px;
   }
 }
 
@@ -766,37 +759,39 @@ a {
   }
   .works-card {
     width: 400px;
-    height: 350px;
-    margin-bottom: 50px;
+    height: 273px;
+    margin-bottom: 30px;
   }
   .works-card__img {
-    height: 275px;
     width: 400px;
+    height: 198px;
   }
   .works-card__text {
     height: 75px;
     max-width: 375px;
   }
   .works-card-info {
-    height: 275px;
+    width: 400px;
+    height: 198px;
   }
 }
 
 @media (max-width: 460px) {
   .works-card {
     width: 280px;
-    height: 275px;
+    height: 213px;
   }
   .works-card__img {
-    height: 200px;
     width: 280px;
+    height: 138px;
   }
   .works-card__text {
     height: 75px;
     max-width: 250px;
   }
   .works-card-info {
-    height: 200px;
+    width: 280px;
+    height: 138px;
   }
   .works-card-content {
     padding: 20px 20px;
